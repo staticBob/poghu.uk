@@ -1,0 +1,192 @@
+*{
+	list-style-type: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html{
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url("https://64.media.tumblr.com/d01cd181bf81abc9ac6fc6f64e854371/291858a8d8307206-b2/s2048x3072/c8fcae61664ae73a8d10851988b146054e5dc292.gifv");
+	z-index:-10;
+}
+
+html, body{
+	height:99%;
+	width:99%;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	overflow: auto;
+}
+
+.container{
+	display: flex;
+	position: static;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  overflow: hidden;
+}
+
+.poghu{
+	display: flex;
+	position: absolute;
+	width: 800px;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.title{
+	animation: transitionIn;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	position: absolute;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+	height: 45%;
+	top: 0;
+}
+
+#title{
+	position: absolute; 
+	font-size: 100px;
+	color: #4d0500;
+	margin-top: 40px;
+}
+
+.socials{
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 55%;
+	height: 55%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.socials a{
+	animation: transitionIn;
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+	transition: width 0.6s;
+	text-decoration: none;
+	display: flex;
+	position: relative;
+	height: 30%;
+	width: 100%;
+	padding: 12px 10px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 20px;
+margin-bottom: 17px;
+	background-color: #4d0500;
+}
+
+span{
+	font-size:22px;
+}
+
+
+a:visited{
+	color: #debad3;
+}
+
+a:link{
+	color: #debad3;
+}
+
+@keyframes transitionIn{
+	0%{opacity: 0;}
+	1%{transform: translateY(-20px);}
+	100%{opacity:1;}
+}
+
+a:hover{
+	width: 110%;
+}
+
+/* Supports iPhone 7 plus to 13 Pro Max */
+
+@media (max-width: 926px) and (max-height: 428px){
+	span{
+		font-size: 15px;
+	}
+	a:hover{
+		width:110%;
+	}
+	.poghu{
+		width: 400px;
+		height: 300px;
+	}
+	#title{
+		font-size: 70px;
+		margin-top: 0;
+	}
+	.title{
+		justify-content: center;
+		bottom: 55%;
+	}
+	.socials a{
+		margin-bottom: 10px;
+		padding: 10px 8px;
+		height: 20%;
+	}
+	.socials{
+		height:
+	}
+}
+
+@media (max-height: 926px) and (max-width: 428px){
+	span{
+		font-size: 20px;
+	}
+	#title{
+		min-height: 100px;
+		max-height: 150px;
+		padding-bottom: 50px;
+	}
+	.socials{
+		margin-bottom: 40px;
+	}
+	.title{
+		overflow: visible;
+		font-size: 80px;
+		min-height: 100px;
+		max-height: 150px;
+	}
+	a:hover{
+		width:110%;
+	}
+	.poghu{
+		min-height: 450px;
+		width: 400px;
+		height: 500px;
+	}
+}
+
+@media (min-width: 1366px){
+	.poghu{
+		display: flex;
+		position: absolute;
+		width: 800px;
+		height: 500px;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+}

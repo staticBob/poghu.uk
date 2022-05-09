@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aim Trainer</title>
+        <link rel="shortcut icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/9cc7454a-0957-4043-be4a-14e2c10a9b0e/d18va4r-d3cfc1e8-1cab-47a1-95f5-3d592f96f0ed.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="aim-trainer.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:description" content=" Play Free Online Aim Trainer">
+		<meta property="og:image" content="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/9cc7454a-0957-4043-be4a-14e2c10a9b0e/d18va4r-d3cfc1e8-1cab-47a1-95f5-3d592f96f0ed.jpg">
+		<meta property="og:title" content="Poghu's Aim Trainer">
+	    <meta property="og:type" content="game">
+    </head>
+    <body>
+        <audio id="click-beep">
+            <source src="beep.wav" type="audio/wav"> 
+        </audio>
+        <audio id="lost-life-beep">
+            <source src="error-beep.wav" type="audio/wav"> 
+        </audio>
+        <div id="game-over-screen">
+            <p id="game-over">Game Over!</p>
+        </div>
+        <div id="select-theme" hidden>
+            <h1 id="select-theme-title">Select Theme</h1>
+            <p id="purple">Purple</p>
+            <p id="aqua">Aqua</p>
+            <p id="sunset">Sunset</p>
+            <div id="color-picker-container">
+                <input type="color" id="color-picker">
+                <label for="color-picker" id="color-picker-label">Custom</label>
+            </div>
+            <div id="color-picker-submit-container"></div>
+            <div id="tip-container"></div>
+        </div>
+        <div id="counter">Hits:</div>
+        <div id="change-theme-container">
+            <span id="change-theme">Change Theme</span>
+            <div id="heart-container">
+                <img class="heart" id="heart1" width="24" alt="heart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/A_perfect_SVG_heart.svg/256px-A_perfect_SVG_heart.svg.png">
+                <img class="heart" id="heart2" width="24" alt="heart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/A_perfect_SVG_heart.svg/256px-A_perfect_SVG_heart.svg.png">
+                <img class="heart" id="heart3" width="24" alt="heart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/A_perfect_SVG_heart.svg/256px-A_perfect_SVG_heart.svg.png">
+                <img class="heart" id="heart4" width="24" alt="heart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/A_perfect_SVG_heart.svg/256px-A_perfect_SVG_heart.svg.png">
+                <img class="heart" id="heart5" width="24" alt="heart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/A_perfect_SVG_heart.svg/256px-A_perfect_SVG_heart.svg.png">
+            </div>
+        </div>
+        <div id="difficulty">
+            <div id="easy">EASY</div>
+            <div id="medium">MEDIUM</div>
+            <div id="hard">HARD</div>
+        </div>
+        <div id="start-container" hidden>
+            <div id="start">START</div>
+        </div>
+        <div id="square-container">
+            <div id="circle"></div>
+        </div>
+        <div id="restart-container">
+            <div id="restart">RESTART</div>
+        </div>   
+        <script src="aim-trainer.js"></script>
+    </body>
+</html>
